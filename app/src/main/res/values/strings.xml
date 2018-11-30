@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Chess960Generator</string>
+    <string name="action_settings">Settings</string>
+    <string name="random">Random!</string>
+    <string name="enter_id">Enter ID:</string>
+    <string name="input_bound_error">Number must be between 0 and 959.</string>
+    <string name="placeholder">Not yet added!</string>
+</resources>
