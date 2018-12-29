@@ -3,8 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="uk.co.clarkey252.chess960generator.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/menu_donate"
         android:orderInCategory="100"
-        android:title="@string/placeholder"
+        android:title="@string/donate"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="200"
+        android:title="@string/about"
         app:showAsAction="never" />
 </menu>

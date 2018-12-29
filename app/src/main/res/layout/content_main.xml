@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:paddingTop="?android:attr/actionBarSize"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:id="@+id/ll_container_top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button_random"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
 
         <TextView
             android:id="@+id/text_enter_id"
@@ -24,19 +26,24 @@
             android:layout_height="wrap_content"
             android:text="@string/enter_id"
             android:textColor="@color/black"
-            android:textSize="48sp" />
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText_id"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editText_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="3"
+            android:gravity="center_horizontal"
             android:background="@color/input_background"
+            android:ems="3"
             android:inputType="number"
             android:maxLength="3"
-            android:textSize="48sp" />
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_enter_id" />
 
-    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
     <Button
         android:id="@+id/button_random"
@@ -44,18 +51,22 @@
         android:layout_height="wrap_content"
         android:text="@string/random"
         android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_output"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_container_top" />
 
     <TextView
         android:id="@+id/text_output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
-        android:textSize="64sp"
         android:textColor="@color/black"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_random" />
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

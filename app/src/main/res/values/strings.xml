@@ -5,4 +5,16 @@
     <string name="enter_id">Enter ID:</string>
     <string name="input_bound_error">Number must be between 0 and 959.</string>
     <string name="placeholder">Not yet added!</string>
+    <string name="donate">Donate</string>
+    <string name="about">About</string>
+    <string name="donate_message">This is app is ad-free and free of charge, if you got some value from it please consider supporting the app and future projects like it by making a donation or contributing on GitHub.\nThank you.\n</string>
+    <string name="OK">OK</string>
+    <string name="no_bitcoin_handler">Bitcoin App not found</string>
+    <string name="copy_address">Copy Bitcoin Address</string>
+
+
+    <string name="paypal_address">"https://www.paypal.me/clarkey252/"</string>
+    <string name="bitcoin_address">"123"</string>
+    <string name="github_address">https://github.com/clarkey252</string>
+
 </resources>

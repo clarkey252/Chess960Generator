@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donate_message"
+        android:id="@+id/donate_message"
+        android:justificationMode="inter_word"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="10dp"
+        android:textSize="18sp"
+        />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_container"
+        app:layout_constraintTop_toBottomOf="@id/donate_message">
+
+        <ImageButton
+            android:id="@+id/bitcoin_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/btc"
+            android:scaleType="fitCenter"
+            android:padding="0dp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintEnd_toStartOf="@+id/paypal_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/paypal_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/paypal"
+            android:scaleType="fitCenter"
+            android:padding="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/github_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/bitcoin_button" />
+
+        <ImageButton
+            android:id="@+id/github_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/github"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="fitCenter"
+            android:padding="0dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/paypal_button" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
