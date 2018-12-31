@@ -165,7 +165,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (id == R.id.menu_about) {
-
+            AboutDialogFragment about = new AboutDialogFragment();
+            about.show(getSupportFragmentManager(),"AboutFragment");
         }
         if (id == R.id.menu_donate) {
             DonateDialogFragment ddf = new DonateDialogFragment();

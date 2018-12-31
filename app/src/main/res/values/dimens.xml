@@ -1,2 +1,3 @@
 <resources>
+    <dimen name="dialouge_text_padding">10dp</dimen>
 </resources>

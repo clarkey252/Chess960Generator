@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="dialogTheme">@style/DialougeStyle</item>
+        <item name="alertDialogTheme">@style/DialougeAlertStyle</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -17,4 +19,10 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="DialougeStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorLink">@color/linkBlue</item>
+    </style>
+    <style name="DialougeAlertStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorLink">@color/linkBlue</item>
+    </style>
 </resources>

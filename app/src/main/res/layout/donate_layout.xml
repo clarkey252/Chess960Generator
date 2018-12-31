@@ -10,7 +10,7 @@
         android:id="@+id/donate_message"
         android:justificationMode="inter_word"
         android:lineSpacingMultiplier="1.2"
-        android:padding="10dp"
+        android:padding="@dimen/dialouge_text_padding"
         android:textSize="18sp"
         />
 
