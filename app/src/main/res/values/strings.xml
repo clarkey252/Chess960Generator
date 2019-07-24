@@ -21,5 +21,6 @@
         The numbering scheme adheres to <a href="https://en.wikipedia.org/wiki/Chess960_numbering_scheme">Chess960 Numbering scheme (Wikipedia)</a> and runs 0-959 (rather than 1-960).\n
         \n
         Made by Clarkey252</string>
+    <string name="donate_message_placeholder">Donate coming soon!</string>
 
 </resources>

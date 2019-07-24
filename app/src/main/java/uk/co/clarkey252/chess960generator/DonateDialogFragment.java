@@ -30,7 +30,7 @@ public class DonateDialogFragment extends DialogFragment{
 
                     }
                 })
-                .setNeutralButton(R.string.copy_address, new DialogInterface.OnClickListener() {
+                /*.setNeutralButton(R.string.copy_address, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         ClipboardManager clipBoard = (ClipboardManager) getActivity().getApplicationContext().getSystemService(CLIPBOARD_SERVICE);
@@ -38,7 +38,7 @@ public class DonateDialogFragment extends DialogFragment{
                         clipBoard.setPrimaryClip(clip);
                         Toast.makeText(getActivity().getApplicationContext(), "Copied to Clipboard", Toast.LENGTH_SHORT).show();
                     }
-                });
+                })*/;
         mBitcoinAddress = getResources().getString(R.string.bitcoin_address);
         // Create the AlertDialog object and return it
         return builder.create();
@@ -48,6 +48,7 @@ public class DonateDialogFragment extends DialogFragment{
     public void onStart() {
         super.onStart();
         Dialog d = getDialog();
+        /*
         d.findViewById(R.id.bitcoin_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,6 +78,6 @@ public class DonateDialogFragment extends DialogFragment{
                 mIntent.setData(Uri.parse(getResources().getString(R.string.github_address)));
                 startActivity(mIntent);
             }
-        });
+        });*/
     }
 }
